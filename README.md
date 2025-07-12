@@ -1,4 +1,4 @@
-# odoo-hackathon-2025
+# odoo-hackathon-2025 (failed to finish frontend and run into bugs, but databse design and backend is finished)
 📚 Skill Swap Platform
 A mini platform that allows users to offer and request skills in exchange. Users can list their skills, search others, request swaps, and provide feedback. Admins can moderate the platform.
 

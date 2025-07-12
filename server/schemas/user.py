@@ -13,6 +13,8 @@ class UserCreate(BaseModel):
     location: Optional[str]
     availability: List[str] = []
     is_public: Optional[bool] = True
+    offered_skills: List[str] = []
+    wanted_skills: List[str] = []
 
 class UserLogin(BaseModel):
     email: EmailStr
@@ -22,6 +24,13 @@ class UserOut(BaseModel):
     id: int
     name: str
     email: str
+    location: Optional[str]
+    availability: List[str]
+    is_public: bool
+    offered_skills: List[str]
+    wanted_skills: List[str]
+    role: Role
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }

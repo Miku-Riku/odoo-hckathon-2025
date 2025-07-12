@@ -19,3 +19,6 @@ class User(Base):
     is_public = Column(Boolean, default=True)
     role = Column(Enum(RoleEnum), default=RoleEnum.user)
     is_banned = Column(Boolean, default=False)
+    offered_skills = Column(ARRAY(String), default=[])
+    wanted_skills = Column(ARRAY(String), default=[])
+    reported_skills = Column(ARRAY(String), default=[])

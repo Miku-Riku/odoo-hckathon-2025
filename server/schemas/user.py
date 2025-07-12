@@ -14,6 +14,10 @@ class UserCreate(BaseModel):
     availability: List[str] = []
     is_public: Optional[bool] = True
 
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
+
 class UserOut(BaseModel):
     id: int
     name: str
